@@ -1,0 +1,199 @@
+/*
+Theme Name: Niveau Child
+Template: niveau
+Author: Ton Nom
+Description: Thème enfant du thème Niveau
+Version: 1.0
+*/
+
+@import url("../niveau/style.css");
+
+.portfolio-archive .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.portfolio-item {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.portfolio-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.portfolio-gallery img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Style global pour le conteneur principal */
+.single-portfolio {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Titre de la réalisation */
+.single-portfolio h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Section des informations (Client, Date, Lien) */
+.meta {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Chaque ligne de la section meta */
+.meta p {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+/* Améliorer l'affichage du lien */
+.meta a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.meta a:hover {
+    text-decoration: underline;
+}
+
+/* Contenu principal de la réalisation */
+.content {
+    margin-bottom: 40px;
+}
+
+.content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Galerie d'images */
+.portfolio-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* Pour chaque image de la galerie */
+.portfolio-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Effet au survol des images */
+.portfolio-gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Ajouter des marges entre les sections pour une meilleure lisibilité */
+.single-portfolio .meta,
+.single-portfolio .content,
+.single-portfolio .portfolio-gallery {
+    margin-bottom: 40px;
+}
+
+/* Améliorations pour les petits écrans (mobile) */
+@media (max-width: 768px) {
+    .single-portfolio {
+        padding: 15px;
+    }
+
+    .single-portfolio h1 {
+        font-size: 2rem;
+    }
+
+    .meta {
+        padding: 15px;
+    }
+
+    .meta p {
+        font-size: 1rem;
+    }
+
+    .portfolio-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+}
+
+
+/* Style pour l'archive portfolio */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.portfolio-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.portfolio-item h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.portfolio-item a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #0073e6;
+    text-decoration: none;
+}
+
+.portfolio-single .portfolio-gallery img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .homepage .about-student {
+        text-align: center;
+    }
+
+    .projects-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+}
